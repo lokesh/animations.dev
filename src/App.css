@@ -27,13 +27,15 @@
   --ease-in-out-expo: cubic-bezier(1, 0, 0, 1);
   --ease-in-out-circ: cubic-bezier(.785, .135, .15, .86);
 }
-}
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
@@ -47,6 +49,23 @@ body {
 a {
   font-weight: 400;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.04);
+  background: #fff;
+  border: none;
+}
+
 
 .app-container {
   display: flex;
@@ -87,103 +106,4 @@ a {
   flex: 1;
   margin-left: var(--sidebar-width);
   padding: 2rem;
-}
-
-/* Page transitions */
-.page-enter {
-  opacity: 0;
-  transform: translateX(20px);
-}
-
-.page-enter-active {
-  opacity: 1;
-  transform: translateX(0);
-  transition: opacity 300ms, transform 300ms;
-}
-
-.page-exit {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.page-exit-active {
-  opacity: 0;
-  transform: translateX(-20px);
-  transition: opacity 300ms, transform 300ms;
-}
-
-/* Home Page Styles */
-.home-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.home-container h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: var(--primary-color);
-}
-
-.subtitle {
-  font-size: 1.2rem;
-  color: #666;
-  margin-bottom: 2rem;
-}
-
-.experiment-list {
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.experiment-list ul {
-  list-style: none;
-  padding: 0;
-}
-
-.experiment-list li {
-  padding: 1rem;
-  border-bottom: 1px solid #eee;
-}
-
-.experiment-list li:last-child {
-  border-bottom: none;
-}
-
-/* Button Experiments */
-.button-experiments {
-  padding: 2rem;
-}
-
-.button-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.button {
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.button.primary {
-  background-color: var(--primary-color);
-  color: white;
-}
-
-.button.secondary {
-  background-color: #f0f0f0;
-  color: var(--text-color);
-}
-
-.button.fun {
-  background-color: #ff6b6b;
-  color: white;
 }

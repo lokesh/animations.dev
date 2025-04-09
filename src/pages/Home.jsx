@@ -9,12 +9,7 @@ const Home = () => {
       className="home-container"
     >
       <div className="experiment-list">
-        <h2>Available Experiments</h2>
-        <ul>
-          <li>Button Experiments - Various button styles and interactions</li>
-          <li>Card Experiments - Card layouts and hover effects</li>
-          <li>Modal Experiments - Different modal animations and behaviors</li>
-        </ul>
+     
       </div>
     </motion.div>
   );
