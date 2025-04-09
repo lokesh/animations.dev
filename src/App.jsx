@@ -8,6 +8,7 @@ import ButtonExperiments from './pages/ButtonExperiments';
 import ModalExperiments from './pages/ModalExperiments';
 import StackedCards from './pages/StackedCards';
 import CardHover from './pages/CardHover';
+import DownloadArrow from './pages/DownloadArrow';
 
 function App() {
   return (
@@ -36,6 +37,9 @@ function App() {
               <li>
                 <Link to="/card-hover">Card Hover</Link>
               </li>
+              <li>
+                <Link to="/download-arrow">Download Arrow</Link>
+              </li>
             </ul>
           </motion.div>
         </nav>
@@ -46,6 +50,7 @@ function App() {
             <Route path="/modals" element={<ModalExperiments />} />
             <Route path="/stacked-cards" element={<StackedCards />} />
             <Route path="/card-hover" element={<CardHover />} />
+            <Route path="/download-arrow" element={<DownloadArrow />} />
           </Routes>
         </main>
       </div>

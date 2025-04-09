@@ -3,7 +3,14 @@ description:
 globs: 
 alwaysApply: true
 ---
+
+## Javascript
 - React project.
 - Do NOT use Typescript.
-
 - I'm new to React, but have experience with VueJS. Explain changes in comparison to VueJS.
+
+## Pages
+When I ask you to create a new page:
+1. Create the jsx page
+2. Create a corresponding css module file in /src/styles
+3. Add a navigation item for the new page in [App.jsx](mdc:src/App.jsx)

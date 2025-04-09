@@ -1,4 +1,4 @@
-import styles from "./CardHover.module.css";
+import styles from "../styles/CardHover.module.css";
 
 export default function CardHover() {
   return (

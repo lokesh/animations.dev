@@ -1,0 +1,35 @@
+.downloadButton {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.04);
+  background: #fff;
+  border: none;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.arrowDown {
+  transition: transform 0.2s var(--ease-out-quad);
+}
+
+.arrowDown:nth-child(1) {
+  transform: translateY(-150%);
+}
+
+.arrowDown:nth-child(2) {
+  position: absolute;
+}
+
+.downloadButton:hover .arrowDown:nth-child(1) {
+  transform: translateY(0);
+}
+
+.downloadButton:hover .arrowDown:nth-child(2) {
+  transform: translateY(150%);
+}
