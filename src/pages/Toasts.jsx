@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from '../styles/Toasts.module.css';
 
 export default function Toaster() {
@@ -24,8 +24,14 @@ export default function Toaster() {
 }
 
 function Toast({ index, total }) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
-    <div className={styles.toast} style={{ '--position': total - index }}>
+    <div className={styles.toast} style={{ '--position': total - index }} data-mounted={mounted}>
       <span className={styles.title}>Event Created </span>
       <span className={styles.description}>Monday, January 3rd at 6:00pm</span>
     </div>
