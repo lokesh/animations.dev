@@ -5,9 +5,9 @@ import './App.css';
 // Pages
 import Home from './pages/Home';
 import ButtonExperiments from './pages/ButtonExperiments';
-import CardExperiments from './pages/CardExperiments';
 import ModalExperiments from './pages/ModalExperiments';
 import StackedCards from './pages/StackedCards';
+import CardHover from './pages/CardHover';
 
 function App() {
   return (
@@ -28,13 +28,13 @@ function App() {
                 <Link to="/buttons">Button Experiments</Link>
               </li>
               <li>
-                <Link to="/cards">Card Experiments</Link>
-              </li>
-              <li>
                 <Link to="/modals">Modal Experiments</Link>
               </li>
               <li>
                 <Link to="/stacked-cards">Stacked Cards</Link>
+              </li>
+              <li>
+                <Link to="/card-hover">Card Hover</Link>
               </li>
             </ul>
           </motion.div>
@@ -43,9 +43,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/buttons" element={<ButtonExperiments />} />
-            <Route path="/cards" element={<CardExperiments />} />
             <Route path="/modals" element={<ModalExperiments />} />
             <Route path="/stacked-cards" element={<StackedCards />} />
+            <Route path="/card-hover" element={<CardHover />} />
           </Routes>
         </main>
       </div>

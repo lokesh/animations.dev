@@ -1,0 +1,9 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+- React project.
+- Do NOT use Typescript.
+
+- I'm new to React, but have experience with VueJS. Explain changes in comparison to VueJS.

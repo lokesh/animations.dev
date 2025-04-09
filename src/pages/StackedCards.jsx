@@ -6,7 +6,14 @@ export default function StackedCards() {
   return (
     <div className="wrapper">
       {new Array(LENGTH).fill(0).map((_, i) => (
-        <div className="card" key={i} />
+        <div 
+          className="card" 
+          key={i} 
+          style={{
+            '--index': i,
+            '--total': LENGTH,
+          }}
+        />
       ))}
     </div>
   );
