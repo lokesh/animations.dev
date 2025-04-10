@@ -9,6 +9,7 @@ import CardHover from './pages/CardHover';
 import DownloadArrow from './pages/DownloadArrow';
 import Toasts from './pages/Toasts';
 import TextReveal from './pages/TextReveal';
+import Orbit from './pages/Orbit';
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
               <li>
                 <Link to="/text-reveal">Text Reveal</Link>
               </li>
+              <li>
+                <Link to="/orbit">Orbit</Link>
+              </li>
             </ul>
 
         </nav>
@@ -45,6 +49,7 @@ function App() {
             <Route path="/download-arrow" element={<DownloadArrow />} />
             <Route path="/toasts" element={<Toasts />} />
             <Route path="/text-reveal" element={<TextReveal />} />
+            <Route path="/orbit" element={<Orbit />} />
           </Routes>
         </main>
       </div>
