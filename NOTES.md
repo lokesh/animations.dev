@@ -1,3 +1,5 @@
+https://animations.dev/ course notes
+
 # Animations
 
 ## Duration
@@ -10,6 +12,25 @@
 
 - Are interruptable.
 - Bounce is good for gesture based interactions.
+
+## Keyframe animations
+
+- animation-fill-mode controls what state the animations shows on it's completion. forwards  
+
+```
+Animation Fill Mode Options:
+
+none:        [before] -> [0%] -> [100%] -> [after]
+forwards:    [before] -> [0%] -> [100%] -> [100%]
+backwards:   [0%] -> [0%] -> [100%] -> [after]
+both:        [0%] -> [0%] -> [100%] -> [100%]
+
+Legend:
+[before] - Element's initial state before animation
+[0%]     - First keyframe state
+[100%]   - Last keyframe state
+[after]  - Element's state after animation completes
+```
 
 ## Easing
 

@@ -8,6 +8,7 @@ import StackedCards from './pages/StackedCards';
 import CardHover from './pages/CardHover';
 import DownloadArrow from './pages/DownloadArrow';
 import Toasts from './pages/Toasts';
+import TextReveal from './pages/TextReveal';
 
 function App() {
   return (
@@ -36,6 +37,9 @@ function App() {
               <li>
                 <Link to="/toasts">Toasts</Link>
               </li>
+              <li>
+                <Link to="/text-reveal">Text Reveal</Link>
+              </li>
             </ul>
           </motion.div>
         </nav>
@@ -46,6 +50,7 @@ function App() {
             <Route path="/card-hover" element={<CardHover />} />
             <Route path="/download-arrow" element={<DownloadArrow />} />
             <Route path="/toasts" element={<Toasts />} />
+            <Route path="/text-reveal" element={<TextReveal />} />
           </Routes>
         </main>
       </div>
