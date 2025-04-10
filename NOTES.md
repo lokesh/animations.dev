@@ -1,4 +1,4 @@
-
+# Animations
 
 ## Duration
 
@@ -41,3 +41,48 @@ Custom curves for a bit more oomph.
   --ease-in-out-expo: cubic-bezier(1, 0, 0, 1);
   --ease-in-out-circ: cubic-bezier(.785, .135, .15, .86);
 }
+
+# CSS
+
+## Focus state
+
+Use **:focus-visible** instead of :focus in most instances. :focus triggers for both mouse clicks and keyboard navigation, in the former case, the focus ring can be distracting when using a mouse. 
+
+.card:hover .content,
+.card:focus-visible .content {
+  opacity: 1;
+}
+
+## Hover state
+
+```
+/* These styles will only apply on devices with true hover capability (laptop with mouse/trackpad but not touch screen) and precise pointing (mouse, trackpad, stylus but not touch) */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* For touch devices, you might want different behavior */
+@media (hover: none) {
+  .card:active {
+    transform: scale(0.98);
+  }
+}
+```
+
+## @starting-style
+**@starting-style** let's you apply values to an element prior to their mounting so you can transition in values.
+
+```
+.toast {
+  transition: transform 0.4s ease;
+  transform: translateY(0);
+}
+
+@starting-style {
+  .toast {
+    transform: translateY(100px);
+  }
+}
+```
