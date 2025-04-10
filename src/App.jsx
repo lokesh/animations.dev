@@ -15,12 +15,6 @@ function App() {
     <Router>
       <div className="app-container">
         <nav className="sidebar">
-          <motion.div
-            initial={{ x: -100 }}
-            animate={{ x: 0 }}
-            transition={{ duration: 0.5 }}
-            className="nav-content"
-          >
             <ul>
               <li>
                 <Link to="/">Home</Link>
@@ -41,7 +35,7 @@ function App() {
                 <Link to="/text-reveal">Text Reveal</Link>
               </li>
             </ul>
-          </motion.div>
+
         </nav>
         <main className="content">
           <Routes>
