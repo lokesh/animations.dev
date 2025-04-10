@@ -1,0 +1,99 @@
+:root {
+  --coin-duration: 2s;
+  --coin-thickness: 3px;
+  --coin-back-color: #F8A400; /* Color for the back of the coin */
+}
+
+.coin {
+  height: 56px;
+  width: 56px;
+  position: relative;
+  transform-style: preserve-3d;
+  /* perspective: 100px; */
+}
+
+.coinIconFront {
+  animation: spin-front var(--coin-duration) linear infinite;
+}
+
+.coinIconFrontBack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 56px;
+  width: 56px;
+  background-color: var(--coin-back-color);
+  border-radius: 50%;
+  animation: spin-front-back var(--coin-duration) linear infinite;
+}
+
+.coinIconBack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: spin-back var(--coin-duration) linear infinite;
+  
+} 
+
+.coinIconBackBack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 56px;
+  width: 56px;
+  background-color: var(--coin-back-color);
+  border-radius: 50%;
+  animation: spin-back-back var(--coin-duration) linear infinite;
+}
+
+.coinSpine {
+  position: absolute;
+  top: 0;
+  left: calc(50% - var(--coin-thickness));
+  height: 56px;
+  width: calc(var(--coin-thickness) * 2);
+  background-color: var(--coin-back-color);
+  animation: spin-spine var(--coin-duration) linear infinite;
+}
+
+@keyframes spin-spine {
+  0% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(450deg);
+  }
+} 
+
+@keyframes spin-front {
+  0% {
+    transform: rotateY(0) translateZ(var(--coin-thickness));
+  }
+  100% {
+    transform: rotateY(360deg) translateZ(var(--coin-thickness));
+  }
+} 
+@keyframes spin-front-back {
+  0% {
+    transform: rotateY(0) translateZ(calc(var(--coin-thickness) - 1px));
+  }
+  100% {
+    transform: rotateY(360deg) translateZ(calc(var(--coin-thickness) - 1px));
+  }
+}
+@keyframes spin-back {
+  0% {
+    transform: rotateY(180deg) translateZ(var(--coin-thickness));
+  }
+  100% {
+    transform: rotateY(540deg) translateZ(var(--coin-thickness));
+  }
+} 
+@keyframes spin-back-back {
+  0% {
+    transform: rotateY(180deg) translateZ(calc(var(--coin-thickness) - 1px));
+  }
+  100% {
+    transform: rotateY(540deg) translateZ(calc(var(--coin-thickness) - 1px));
+  }
+}

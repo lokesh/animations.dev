@@ -10,6 +10,7 @@ import DownloadArrow from './pages/DownloadArrow';
 import Toasts from './pages/Toasts';
 import TextReveal from './pages/TextReveal';
 import Orbit from './pages/Orbit';
+import CoinSpin from './pages/CoinSpin';
 
 function App() {
   return (
@@ -38,6 +39,9 @@ function App() {
               <li>
                 <Link to="/orbit">Orbit</Link>
               </li>
+              <li>
+                <Link to="/coin-spin">Coin Spin</Link>
+              </li>
             </ul>
 
         </nav>
@@ -50,6 +54,7 @@ function App() {
             <Route path="/toasts" element={<Toasts />} />
             <Route path="/text-reveal" element={<TextReveal />} />
             <Route path="/orbit" element={<Orbit />} />
+            <Route path="/coin-spin" element={<CoinSpin />} />
           </Routes>
         </main>
       </div>
