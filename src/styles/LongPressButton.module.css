@@ -33,6 +33,6 @@
 
 .container:active .buttonActive {
   clip-path: inset(0 0 0 0);
-  transition: transform 0.15s ease-out, clip-path 2s linear;  
+  transition: transform 0.15s ease-out, clip-path 1.5s linear;  
 }
 

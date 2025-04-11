@@ -109,3 +109,8 @@ Use **:focus-visible** instead of :focus in most instances. :focus triggers for 
   }
 }
 ```
+
+
+## clip-path
+
+Don't forget about using clip-path with transitions as an animation tool.
