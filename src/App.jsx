@@ -11,6 +11,7 @@ import Toasts from './pages/Toasts';
 import TextReveal from './pages/TextReveal';
 import Orbit from './pages/Orbit';
 import CoinSpin from './pages/CoinSpin';
+import TabSlider from './pages/TabSlider';
 
 function App() {
   return (
@@ -42,6 +43,9 @@ function App() {
               <li>
                 <Link to="/coin-spin">Coin Spin</Link>
               </li>
+              <li>
+                <Link to="/tab-slider">Tab Slider</Link>
+              </li>
             </ul>
 
         </nav>
@@ -55,6 +59,7 @@ function App() {
             <Route path="/text-reveal" element={<TextReveal />} />
             <Route path="/orbit" element={<Orbit />} />
             <Route path="/coin-spin" element={<CoinSpin />} />
+            <Route path="/tab-slider" element={<TabSlider />} />
           </Routes>
         </main>
       </div>

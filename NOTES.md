@@ -40,6 +40,7 @@ Legend:
 
 Custom curves for a bit more oomph.
 
+```css
 :root {
   --ease-in-quad: cubic-bezier(.55, .085, .68, .53);
   --ease-in-cubic: cubic-bezier(.550, .055, .675, .19);
@@ -62,6 +63,7 @@ Custom curves for a bit more oomph.
   --ease-in-out-expo: cubic-bezier(1, 0, 0, 1);
   --ease-in-out-circ: cubic-bezier(.785, .135, .15, .86);
 }
+```
 
 # CSS
 
