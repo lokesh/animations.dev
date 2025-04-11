@@ -12,6 +12,7 @@ import TextReveal from './pages/TextReveal';
 import Orbit from './pages/Orbit';
 import CoinSpin from './pages/CoinSpin';
 import TabSlider from './pages/TabSlider';
+import LongPressButton from './pages/LongPressButton';
 
 function App() {
   return (
@@ -46,6 +47,9 @@ function App() {
               <li>
                 <Link to="/tab-slider">Tab Slider</Link>
               </li>
+              <li>
+                <Link to="/long-press-button">Long Press Button</Link>
+              </li>
             </ul>
 
         </nav>
@@ -60,6 +64,7 @@ function App() {
             <Route path="/orbit" element={<Orbit />} />
             <Route path="/coin-spin" element={<CoinSpin />} />
             <Route path="/tab-slider" element={<TabSlider />} />
+            <Route path="/long-press-button" element={<LongPressButton />} />
           </Routes>
         </main>
       </div>

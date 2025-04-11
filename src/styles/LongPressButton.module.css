@@ -1,0 +1,38 @@
+
+.container {
+  position: relative;
+}
+
+.container:active .button {
+  transform: scale(0.95);
+}
+
+.button {
+  position: relative;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 9999px;
+  background-color: #f6f5f5;
+  padding-inline: 24px;
+  font-weight: 500;
+  color: #21201c;
+  border: none;
+  box-shadow: none;
+  transition: transform 0.15s var(--ease-out-quad), clip-path 0.3s ease-out;  
+} 
+
+.buttonActive {
+  position: absolute;
+  top: 0;
+  background-color: #FFDBDC;
+  color: #E5484D;
+  clip-path: inset(0 100% 0 0);
+}
+
+.container:active .buttonActive {
+  clip-path: inset(0 0 0 0);
+  transition: transform 0.15s ease-out, clip-path 2s linear;  
+}
+

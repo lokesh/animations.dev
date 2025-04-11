@@ -13,7 +13,7 @@
 .tabContainerActive {
   position: absolute;
   background: #468EF7;
-  transition: clip-path 0.2s var(--ease-out-quad);
+  transition: clip-path 0.3s var(--ease-out-expo);
 }
 
 .tabContainerActive.tab0 {
